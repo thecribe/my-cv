@@ -1,3 +1,5 @@
+import Header from "./components/Header";
+import Frontend from "./pages/Frontend";
 import "./styles.scss";
 import {
   createBrowserRouter,
@@ -10,14 +12,18 @@ import {
 const Root = () => {
   return (
     <div>
-      <h1>Root</h1>
+      <Header />
       <Outlet />
     </div>
   );
 };
 
 const router = createBrowserRouter(
-  createRoutesFromElements(<Route path="/" element={<Root />}></Route>)
+  createRoutesFromElements(
+    <Route path="/" element={<Root />}>
+      <Route path="/" element={<Frontend />} />
+    </Route>
+  )
 );
 
 const App = () => {

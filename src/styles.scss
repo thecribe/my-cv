@@ -1,1 +1,215 @@
+//COLOR DECLARATION
 
+$primary-color: rgb(204, 167, 0);
+$secondary-color: rgb(255, 215, 57);
+$bg-background: rgb(246, 246, 246);
+$accent-color: rgb(102, 101, 101);
+
+$box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+.icons {
+  margin: 0rem 0.5em;
+}
+
+.arrow-down {
+  margin-top: 3rem;
+  &-pointer {
+    font-size: 5rem;
+  }
+}
+
+.box-shadow {
+  box-shadow: $box-shadow;
+}
+
+.content-centered {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.title-design-box {
+  height: 400px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .title-design {
+    position: relative;
+    width: 70%;
+    height: 100%;
+    color: $accent-color;
+    .first-box {
+      width: 60%;
+      padding: 1.5rem;
+      position: absolute;
+      left: 20%;
+      height: 60%;
+      border-radius: 0rem 0rem 9999px 9999px;
+      z-index: 1;
+      background-color: white;
+      box-shadow: $box-shadow;
+
+      .inner-box {
+        height: 100%;
+        background-color: $secondary-color;
+        border-radius: 0rem 0rem 9999px 9999px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        h1 {
+          text-align: center;
+          color: white;
+          font-size: 7rem;
+        }
+      }
+    }
+
+    .second-box {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 70%;
+      background-color: $bg-background;
+      padding-top: 15rem;
+      text-align: center;
+      border-radius: 1rem;
+    }
+  }
+}
+
+header {
+  box-shadow: $box-shadow;
+  padding: 1rem 0;
+
+  .header {
+    max-width: 1700px;
+    margin: 0 auto;
+    display: flex;
+    gap: 5rem;
+
+    align-items: center;
+    &-site-logo {
+      width: 150px;
+    }
+
+    &-navigation {
+      ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+
+        li {
+          list-style: none;
+
+          .links {
+            font-size: 1.8rem;
+            transition: all 0.2s ease-in-out;
+            color: $accent-color;
+
+            &:hover {
+              color: $primary-color;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.homepage {
+  .cover {
+    height: 95vh;
+    text-align: center;
+    .cover-section {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      height: 90%;
+
+      .cover-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 700px;
+
+        text-align: center;
+        gap: 5rem;
+
+        h1 {
+          font-size: 7rem;
+          color: rgba(63, 62, 62, 0.904);
+          #special-text {
+            color: $primary-color;
+          }
+        }
+
+        .image-box {
+          box-shadow: rgba($accent-color, 0.2) 0px 2px 20px 0px;
+          width: 350px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          padding-top: 5rem;
+          border-radius: 2rem;
+
+          .img {
+            width: 80%;
+          }
+
+          .description {
+            width: 100%;
+            background-color: rgba($accent-color, 0.2);
+            padding: 1.5rem;
+            border-radius: 0 0 2rem 2rem;
+
+            p {
+              font-size: 1.5rem;
+              color: rgba($accent-color, 0.9);
+            }
+          }
+        }
+
+        .btn {
+          background-color: #0000ff;
+          padding: 1rem 3rem;
+          font-size: 2rem;
+          color: white;
+          border-radius: 1rem;
+          box-shadow: $box-shadow;
+          transition: all 0.3s ease-in-out;
+          &:hover {
+            opacity: 0.8;
+            transform: scale(1.01);
+          }
+          &:active {
+            transform: scale(0.9);
+          }
+        }
+      }
+    }
+  }
+
+  .section {
+    margin: 2rem 0;
+    &-one {
+      display: flex;
+      gap: 10rem;
+      padding: 4rem 0;
+      justify-content: center;
+      align-items: center;
+      .section-title {
+        flex-grow: 2;
+      }
+
+      .section-details {
+        flex-grow: 3;
+      }
+    }
+  }
+}
