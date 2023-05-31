@@ -3,7 +3,7 @@ import Education from "./InnerNavBar/Education";
 import WhatIDo from "./InnerNavBar/WhatIDo";
 
 const InnerNavBar = () => {
-  const [navState, setNavState] = useState(0);
+  const [navState, setNavState] = useState(1);
 
   const education = [
     {
