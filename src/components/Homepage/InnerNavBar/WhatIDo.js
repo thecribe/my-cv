@@ -1,4 +1,5 @@
 import React from "react";
+import { FaArrowRight } from "react-icons/fa";
 
 const WhatIDo = () => {
   return (
@@ -13,6 +14,9 @@ const WhatIDo = () => {
               prepare people to work in various sectors of the economy or areas
               of culture."
             </p>
+            <h4 className="call-to-action">
+              View Projects <FaArrowRight />
+            </h4>
           </div>
         </div>
         <div className="skills-box">
@@ -24,6 +28,9 @@ const WhatIDo = () => {
               prepare people to work in various sectors of the economy or areas
               of culture."
             </p>
+            <h4 className="call-to-action">
+              View Projects <FaArrowRight />
+            </h4>
           </div>
         </div>
         <div className="skills-box">
@@ -35,6 +42,9 @@ const WhatIDo = () => {
               prepare people to work in various sectors of the economy or areas
               of culture."
             </p>
+            <h4 className="call-to-action">
+              View Projects <FaArrowRight />
+            </h4>
           </div>
         </div>
         <div className="skills-box">
@@ -46,6 +56,9 @@ const WhatIDo = () => {
               prepare people to work in various sectors of the economy or areas
               of culture."
             </p>
+            <h4 className="call-to-action">
+              View Projects <FaArrowRight />
+            </h4>
           </div>
         </div>
       </div>

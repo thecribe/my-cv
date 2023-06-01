@@ -1,6 +1,7 @@
 import Header from "./components/Header";
 import Frontend from "./pages/Frontend";
 import "./styles.scss";
+import "./mediaquery.scss";
 import {
   createBrowserRouter,
   createRoutesFromElements,
@@ -23,7 +24,8 @@ const router = createBrowserRouter(
     <Route path="/" element={<Root />}>
       <Route path="/" element={<Frontend />} />
     </Route>
-  )
+  ),
+  { basename: "/my-cv" }
 );
 
 const App = () => {

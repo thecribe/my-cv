@@ -1,0 +1,63 @@
+@media screen and (max-width: 960px) {
+  .title-design-box {
+    width: 500px;
+  }
+  .homepage {
+    .section {
+      &-one {
+        display: block;
+
+        .section-title {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 100%;
+        }
+
+        .section-details {
+          padding: 2rem;
+          width: 100%;
+          margin-top: 5rem;
+        }
+      }
+
+      &-three {
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .homepage {
+    .section {
+      &-three {
+        .education {
+          display: block;
+          padding: 2rem;
+          .section-container {
+            width: 100%;
+          }
+        }
+        .skills {
+          padding: 3rem;
+          display: block;
+          &::after {
+            display: none;
+          }
+
+          &-box {
+            margin-bottom: 3rem;
+            width: 100%;
+            &::after {
+              display: none;
+            }
+
+            &::before {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}
