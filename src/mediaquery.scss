@@ -1,4 +1,9 @@
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 850px) {
+  header {
+    .header {
+      flex-direction: column;
+    }
+  }
   .title-design-box {
     width: 500px;
   }
@@ -28,7 +33,31 @@
 }
 
 @media screen and (max-width: 650px) {
+  header {
+    .header {
+      &-navigation {
+        display: none;
+      }
+    }
+  }
+
   .homepage {
+    .cover {
+      height: 100%;
+      .cover-section {
+        .cover-box {
+          width: 100%;
+          h1 {
+            padding: 2rem;
+            font-size: 5rem;
+          }
+        }
+        .image-box {
+          width: 100%;
+        }
+      }
+    }
+
     .section {
       &-three {
         .education {
@@ -55,6 +84,22 @@
             &::before {
               display: none;
             }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .homepage {
+    .cover {
+      height: 100%;
+      .cover-section {
+        .cover-box {
+          h1 {
+            margin-top: 5rem;
+            font-size: 3rem;
           }
         }
       }
