@@ -11,6 +11,7 @@ import SectionWrrapper from "../components/AboutPage/SectionWrrapper";
 import AboutSection from "../components/AboutPage/AboutSection";
 import Introduction from "../components/AboutPage/Introduction";
 import Resume from "../components/AboutPage/Resume";
+import Services from "../components/AboutPage/Services";
 
 const About = () => {
   return (
@@ -68,6 +69,9 @@ const About = () => {
               </SectionWrrapper>
               <SectionWrrapper>
                 <Resume />
+              </SectionWrrapper>
+              <SectionWrrapper>
+                <Services />
               </SectionWrrapper>
             </div>
           </div>

@@ -13,7 +13,35 @@ const Resume = () => {
         <h2>
           Education & <span id="special-text">Experience</span>
         </h2>
-        <div className="resume-list"></div>
+        <div className="resume-list">
+          <div className="single">
+            <div className="single-inner-div">
+              <p>2019-present</p>
+              <h3>Framer Desinger & Developer</h3>
+              <p>Brunodee Agency</p>
+              <h3>Framer Desinger & Developer</h3>
+              <p>Brunodee Agency</p>
+            </div>
+          </div>
+          <div className="single">
+            <div className="single-inner-div">
+              <p>2019-present</p>
+              <h3>Framer Desinger & Developer</h3>
+              <p>Brunodee Agency</p>
+              <h3>Framer Desinger & Developer</h3>
+              <p>Brunodee Agency</p>
+              <h3>Framer Desinger & Developer</h3>
+              <p>Brunodee Agency</p>
+            </div>
+          </div>
+          <div className="single">
+            <div className="single-inner-div">
+              <p>2019-present</p>
+              <h3>Framer Desinger & Developer</h3>
+              <p>Brunodee Agency</p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
