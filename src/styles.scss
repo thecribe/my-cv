@@ -3,7 +3,7 @@
 $primary-color: rgb(204, 167, 0);
 $secondary-color: rgb(255, 215, 57);
 $bg-background: rgb(246, 246, 246);
-$accent-color: rgb(102, 101, 101);
+$accent-color: rgba(102, 101, 101, 0.829);
 
 $btn-color: #0202a1;
 
@@ -27,6 +27,10 @@ $box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 .content-centered {
   max-width: 1600px;
   margin: 0 auto;
+}
+
+#special-text {
+  color: $primary-color;
 }
 
 .title-design-box {
@@ -238,9 +242,6 @@ header {
         h1 {
           font-size: 7rem;
           color: rgba(63, 62, 62, 0.904);
-          #special-text {
-            color: $primary-color;
-          }
         }
 
         .image-box {
@@ -623,6 +624,193 @@ header {
             );
             z-index: -1;
             visibility: hidden;
+          }
+        }
+      }
+    }
+  }
+}
+
+.section-about {
+  height: 93vh;
+  display: flex;
+
+  .profile-preview {
+    height: 100%;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: $box-shadow;
+
+    .profile-container {
+      box-shadow: $box-shadow;
+      border-radius: 2rem;
+      padding: 4rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 3rem;
+
+      .profile-header {
+        display: flex;
+        gap: 5rem;
+        justify-content: center;
+        align-items: center;
+
+        .logo {
+          width: 100px;
+        }
+
+        .job-desc {
+          text-align: right;
+        }
+      }
+
+      .profile-image {
+        width: 250px;
+        height: 250px;
+        background-color: $bg-background;
+        border-radius: 2rem;
+      }
+
+      .profile-text {
+        text-align: center;
+        line-height: 2;
+      }
+
+      .socials {
+        display: flex;
+        gap: 1rem;
+        justify-content: center;
+        align-items: center;
+
+        .icon {
+          width: 50px;
+          height: 50px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border: 1px solid $accent-color;
+          border-radius: 9999px;
+          font-size: 1.6rem;
+          transition: all 0.3s ease-in-out;
+
+          &:hover {
+            border: 1px solid $primary-color;
+            color: $primary-color;
+            cursor: pointer;
+          }
+        }
+        p {
+          text-align: center;
+          padding: 1rem;
+        }
+      }
+
+      .call-to-action {
+        width: 100%;
+        background-color: $primary-color;
+        text-align: center;
+        border-radius: 2rem;
+        padding: 1rem;
+        border: 1px solid $primary-color;
+        transition: all 0.3s ease-in-out;
+        p {
+          color: white;
+          transition: all 0.3s ease-in-out;
+        }
+        &:hover {
+          background-color: transparent;
+          border: 1px solid $primary-color;
+          cursor: pointer;
+          p {
+            color: $primary-color;
+          }
+        }
+      }
+    }
+  }
+
+  .profile-details {
+    width: 70%;
+    overflow: hidden;
+
+    .inner-div {
+      height: 100%;
+      overflow-y: scroll;
+      // margin-left: 15rem;
+
+      &-centered {
+        max-width: 70%;
+        margin: 0 auto;
+      }
+
+      .section_wrapper {
+        padding: 5rem 4rem 10rem 0rem;
+
+        border-bottom: 1px solid $bg-background;
+
+        .section-title {
+          width: max-content;
+          border: 1px solid $primary-color;
+          padding: 1rem 2rem;
+          border-radius: 2rem;
+          margin: 3rem 0rem;
+
+          h4 {
+            font-size: 1.2rem;
+          }
+        }
+
+        .introduction {
+          .hero-text {
+            .spacing {
+              height: 15vh;
+            }
+
+            h1 {
+              font-size: 9rem;
+              font-weight: 200;
+              margin-bottom: 3rem;
+            }
+            p {
+              line-height: 2;
+            }
+
+            .data-counter {
+              width: 500px;
+              display: flex;
+              gap: 2rem;
+              .experience {
+                width: 50%;
+              }
+
+              .projects {
+                width: 50%;
+              }
+            }
+          }
+        }
+
+        .about {
+          &-details {
+            h2 {
+              font-weight: 400;
+              font-size: 5rem;
+              margin: 5rem 0;
+            }
+          }
+        }
+
+        .resume {
+          &-details {
+            h2 {
+              font-weight: 400;
+              font-size: 5rem;
+              margin: 5rem 0;
+            }
           }
         }
       }

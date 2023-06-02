@@ -9,6 +9,7 @@ import {
   Route,
   RouterProvider,
 } from "react-router-dom";
+import About from "./pages/About";
 
 const Root = () => {
   return (
@@ -23,6 +24,7 @@ const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<Root />}>
       <Route path="/" element={<Frontend />} />
+      <Route path="/about-me" element={<About />} />
     </Route>
   ),
   { basename: "/my-cv" }

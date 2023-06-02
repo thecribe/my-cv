@@ -1,6 +1,5 @@
 import React from "react";
 import CoverSection from "../components/Homepage/CoverSection";
-import ArrowNavigation from "../components/ArrowNavigation/ArrowNavigation";
 import SectionTitle from "../components/SectionTitle";
 import JobDescription from "../components/JobDescription";
 import Technologies from "../components/Technologies";
@@ -86,9 +85,8 @@ const Frontend = () => {
           <div className="cover-section">
             <CoverSection />
           </div>
-          <ArrowNavigation />
         </section>
-        <section className="section box-shadow">
+        <section className="section">
           <div className="section-one content-centered">
             <div className="section-title  ">
               <SectionTitle firstTitle="Job" secondTitle="Experience" />
