@@ -3,7 +3,7 @@
 $primary-color: rgb(204, 167, 0);
 $secondary-color: rgb(255, 215, 57);
 $bg-background: rgb(246, 246, 246);
-$accent-color: rgba(102, 101, 101, 0.829);
+$accent-color: rgba(102, 101, 101, 0.9);
 
 $btn-color: #0202a1;
 
@@ -865,6 +865,42 @@ header {
         }
 
         .services {
+          &-details {
+            h2 {
+              font-weight: 400;
+              font-size: 5rem;
+              margin: 5rem 0;
+            }
+
+            .services-list {
+              .single {
+                border: 2px solid $bg-background;
+                padding: 4rem;
+                margin-bottom: 2rem;
+                border-radius: 2rem;
+                transition: all 0.5s ease-in-out;
+                line-height: 2;
+
+                p:last-child {
+                  margin-top: 5rem;
+                  transition: all 0.3s ease-in-out;
+                  width: max-content;
+
+                  &:hover {
+                    cursor: pointer;
+                    text-decoration: underline;
+                  }
+                }
+
+                &:hover {
+                  border: 2px solid $primary-color;
+                }
+              }
+            }
+          }
+        }
+
+        .skills {
           &-details {
             h2 {
               font-weight: 400;
